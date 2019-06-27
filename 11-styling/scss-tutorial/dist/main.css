@@ -1,0 +1,44 @@
+.btn {
+  opacity: 1;
+  font-size: 16px;
+  color: blue;
+  border-radius: 1px 2px 3px 4px;
+  -webkit-border-radius: 1px 2px 3px 4px;
+  -moz-border-radius: 1px 2px 3px 4px;
+}
+
+.btn-primary {
+  background-color: blue;
+}
+
+.hello {
+  border-radius: 10px 20px 3px 4px;
+  -webkit-border-radius: 10px 20px 3px 4px;
+  -moz-border-radius: 10px 20px 3px 4px;
+}
+.hello .my-size-10 {
+  font-size: 10px;
+}
+.hello .my-size-20 {
+  font-size: 20px;
+}
+.hello .my-size-30 {
+  font-size: 30px;
+}
+
+.compass-radius {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+}
+
+.form-group #hello {
+  background: red;
+}
+.form-group .bar {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=main.css.map */

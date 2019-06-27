@@ -30,6 +30,31 @@ module.exports = function(config) {
       'test.js': ['webpack']
     },
 
+    webpack: {
+      entry: './test.js',
+      module: {
+        rules: [
+          {
+            test: /\.js$/,
+            use: 'babel-loader'
+          },
+          {
+            test: /\.(svg|png|jpeg|jpg|bmp)$/,
+            use: 'file-loader'
+          },
+          {
+            test: /\.css$/,
+            use: [
+              'style-loader',
+              'css-loader'
+            ]
+          }
+        ]
+      },
+      mode: 'development',
+      devtool: 'inline-source-map'
+    },
+
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
@@ -56,7 +81,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome'],
+    browsers: ['ChromeResponsive'],
 
 
     // Continuous Integration mode
@@ -65,6 +90,18 @@ module.exports = function(config) {
 
     // Concurrency level
     // how many browser should be started simultaneous
-    concurrency: Infinity
+    concurrency: Infinity,
+
+    customLaunchers: {
+      'ChromeResponsive': {
+        base: 'Chrome',
+          options: {
+            viewportSize: {
+              width: 300,
+              height: 1000
+          }
+        }
+      }
+    },
   })
 }

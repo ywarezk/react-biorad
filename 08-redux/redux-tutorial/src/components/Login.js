@@ -42,6 +42,6 @@ function Login(props) {
 export default connect(
     null,
     {
-        setName
+        setName: setName
     }
 )(Login)

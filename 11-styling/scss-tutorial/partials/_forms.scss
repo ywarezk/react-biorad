@@ -1,0 +1,27 @@
+// nesting
+
+.form-group {
+
+    #hello { // .form-group #hello
+        background: red;
+    }
+
+    .bar { // .form-group .bar
+        opacity: 1;
+    }
+
+    &:hover { //.form-group:hover
+
+    }
+
+    &#lurem { // .form-group#lurem
+
+    }
+
+}
+
+.header {
+    
+    
+
+}

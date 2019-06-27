@@ -1,0 +1,21 @@
+
+@mixin commonButton {
+    font-size: $my-font-size;
+    color: $my-theme-color;
+}
+
+@mixin borderRadius($topLeft : 50%, $topRight, $bottomLeft, $bottomRight) {
+    border-radius: $topLeft $topRight $bottomLeft $bottomRight;
+    -webkit-border-radius: $topLeft $topRight $bottomLeft $bottomRight; 
+    -moz-border-radius: $topLeft $topRight $bottomLeft $bottomRight; 
+}
+
+// 10 20 30
+// .my-size-10 {font-size: 10px}
+@mixin fontSizes($listSizes) {
+    @each $size in $listSizes {
+        .my-size-#{$size} {
+            font-size: #{$size}px
+        }
+    }
+}

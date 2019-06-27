@@ -1,0 +1,11 @@
+
+
+// opacity : 0 , 1
+@function isVisible($visible : true) {
+    @if $visible {
+        @return 1;    
+    } 
+    @else {
+        @return 0;    
+    }
+}
