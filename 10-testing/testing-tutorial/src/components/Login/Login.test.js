@@ -110,7 +110,7 @@ describe('<Login />', function() {
     })
 
     afterEach(function() {
-        // loginWrapper.unmount();
+        loginWrapper.unmount();
     });
 
 

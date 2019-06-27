@@ -6,6 +6,12 @@ import React, {useContext} from 'react';
 import Gran1 from './Gran1';
 import MessageContext from '../contexts/msg.context';
 
+// export default class Child1 extends React.Component {
+//     static contextType = MessageContext;
+
+//     // this.context
+// }
+
 export default function Child1(props) {
     // {msg.., cb}
     const contextValue = useContext(MessageContext);
